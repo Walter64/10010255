@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Latest News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card button *ngFor="let story of NewsStories">
+    <a href="{{story.url}}">    
+    <img height="150" width="320" src="{{story.urlToImage}}">
+    </a>
+    <ion-card-header>      
+      <ion-card-subtitle><h3>{{story.title}}</h3></ion-card-subtitle>        
+    </ion-card-header>
+    <ion-card-content>{{story.content}}</ion-card-content>    
+  </ion-card>
+</ion-content>

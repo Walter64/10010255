@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Photo Services</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-avatar class="picture">
+    <ion-img [src]="base64Image"></ion-img>
+  </ion-avatar>
+
+  <ion-card>
+    <ion-header class="ion-text-center">
+      <ion-card-title>Photography Options</ion-card-title>
+    </ion-header>
+  </ion-card>
+
+  <div class="ion-padding">
+    <ion-button
+     class="btnHeight"
+     expand="block"
+     shape="round"
+     color="tertiary"
+     (click)="getCamera()">
+      Take Photograph
+    </ion-button
+    >
+  </div>
+  
+  <div class="ion-padding">
+    <ion-button
+     class="btnHeight"
+     expand="block"
+     shape="round"
+     color="tertiary"
+     (click)="getGalleryPhoto()">
+      Photo Gallery
+    </ion-button
+    >
+  </div>
+
+</ion-content>

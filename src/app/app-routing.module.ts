@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'news-page',
+    loadChildren: () => import('./news-page/news-page.module').then( m => m.NewsPagePageModule)
+  },
+  {
+    path: 'photo-service',
+    loadChildren: () => import('./photo-service/photo-service.module').then( m => m.PhotoServicePageModule)
+  },
+  {
+    path: 'forms',
+    loadChildren: () => import('./forms/forms.module').then( m => m.FormsPageModule)
+  },
+  {
+    path: 'display-form',
+    loadChildren: () => import('./display-form/display-form.module').then( m => m.DisplayFormPageModule)
+  },
 ];
 
 @NgModule({

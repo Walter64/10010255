@@ -1,20 +1,53 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar>    
+    <ion-title class="ion-text-center">
+      News Today    
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-img height="300" width="300" src="assets\images\newsOne.jpg"></ion-img>
+    <ion-header>      
+    </ion-header>
+  </ion-card>
+
+  <ion-button
+   class="btnHeight"
+   expand="block"
+   shape="round"
+   color="tertiary"
+   [routerLink]="['/news-page']">
+    News Page
+  </ion-button>
+  
+  <ion-button
+   class="btnHeight"
+   expand="block"
+   shape="round"
+   color="tertiary"
+   [routerLink]="['/photo-service']">
+    Photo Service Page
+  </ion-button>
+  
+  <ion-button
+   class="btnHeight"
+   expand="block"
+   shape="round"
+   color="tertiary"
+   [routerLink]="['/forms']">
+    Create Forms Page
+  </ion-button>
+
+  <ion-button
+   class="btnHeight"
+   expand="block"
+   shape="round"
+   color="tertiary"
+   [routerLink]="['/display-form']">
+    Access Forms Page
+  </ion-button>
+
 </ion-content>

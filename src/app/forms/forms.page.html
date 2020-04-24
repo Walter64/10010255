@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Create Form Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="stacked">First Name</ion-label>
+    <ion-input [(ngModel)]="firstname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Last Name</ion-label>
+    <ion-input [(ngModel)]="lastname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">ID Number</ion-label>
+    <ion-input [(ngModel)]="number"></ion-input>
+  </ion-item>
+
+  <div class="ion-padding">
+    <ion-button
+   class="btnHeight"
+   expand="block"
+   shape="round"
+   color="tertiary" (click)="onSave()">
+    Create Account
+  </ion-button>
+  </div>
+
+</ion-content>
